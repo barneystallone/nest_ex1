@@ -1,10 +1,10 @@
 import { Inject, Injectable } from '@nestjs/common';
 import * as fs from 'fs/promises';
 import { join } from 'path';
+import { IQsGetAllUser } from './interfaces/qs-get-all-user.interface';
 import { UserConfig } from './interfaces/user-config.interface';
 import { User } from './interfaces/user.interface';
 import { USER_CONFIG_TOKEN } from './user.module';
-import { IQsGetAllUser } from './interfaces/qs-get-all-user.interface';
 @Injectable()
 export class UserService {
   constructor(
